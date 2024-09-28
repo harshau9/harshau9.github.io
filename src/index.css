@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+:root{
+  --selected-theme-background-color: var(--yellow-theme-background-color);
+  --selected-theme-main-color: var(--yellow-theme-main-color);
+  --selected-theme-sub-text-color: var(--yellow-theme-sub-text-color);
+  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color);
+  --selected-theme-mycolor: var(--yellow-theme-mycolor);
+  
+  /* primary color yellow */
+  --yellow-theme-background-color: #1d1d1d;
+  --yellow-theme-main-color: #ffdd40;
+  --yellow-theme-sub-text-color: #ffffff;
+  --yellow-theme-nav-background-color: #181818;
+  --yellow-theme-mycolor: #fff9c4;
+
+  /* 2nd color yellow */
+  --red-theme-background-color: #1d1d1d;
+  --red-theme-main-color: #e82a2a;
+  --red-theme-sub-text-color: #ffffff;
+  --red-theme-nav-background-color: #181818;
+  --red-theme-mycolor: #ffccbc;
+  /* 3rd color yellow */
+  --green-theme-background-color: #1d1d1d;
+  --green-theme-main-color: #6ac045;
+  --green-theme-sub-text-color: #ffffff;
+  --green-theme-nav-background-color: #181818;
+  --green-theme-mycolor: #c8e6c9;
+  /* 4th color yellow */
+  --blue-theme-background-color: #1d1d1d;
+  --blue-theme-main-color: #5078ff;
+  --blue-theme-sub-text-color: #ffffff;
+  --blue-theme-nav-background-color: #181818;
+  --blue-theme-mycolor: #b3e5fc;
+
+  --font-base : "Roboto Slab", serif;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+  height:100%;
+}
+body {
+background: var(--selected-theme-background-color);
+height: 100%;
+}
+#root {
+  height: 100%;
 }
